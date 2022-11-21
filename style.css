@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+   
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    top: 25%;
+    position: relative;
+    
+    
+ 
+}
+#mobile-img{
+    display: none;
+}
+
+
+
+.img-content img{
+    
+    border-radius: 10px 0 0 10px;
+    height: 350px;
+    
+    
+    
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid rgb(228, 224, 217);
+    background-color: hsl(0, 0%, 100%);
+    height: 350px;
+    width: 270px;
+    justify-content: space-around;
+    padding: 5px 0 20px 20px;
+    
+    
+}
+h5{
+    
+    text-align: left;
+    color: hsl(228, 12%, 48%);
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+}
+h1{
+    color:hsl(212, 21%, 14%);
+    width: 80%;
+    text-align: left;
+    font-family: 'Fraunces', serif;
+    
+    
+    
+}
+
+p{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-align:left;
+    font-size: 14px;
+    width: 85%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+    
+}
+.price h2,h4{
+    display: inline-block;
+    
+    
+    
+}
+.price h2{
+    margin-right: 10px;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+.price h4{
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    vertical-align:super;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    
+    
+}
+.btn button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(10, 71, 46);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor:pointer;
+}
+.btn img{
+    
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 14px;
+   
+}
+.btn button:active{
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width:375px){
+    #desktop-img{
+        display: none;
+    }
+    #mobile-img{
+        display: block;
+    }
+    .main{
+        height: 100%;
+    }
+    
+   .content{
+        flex-direction: column;
+        margin: auto auto;
+        
+    }
+    .img-content img{
+        
+        border-radius: 10px 10px 0 0 ;
+        width: 90%;
+        height: 15%;
+        margin: auto auto;
+    }
+    .card{
+        width: 90%;
+        border-radius: 0 0 10px 10px;
+        margin: auto auto;
+    }
+    
+}
